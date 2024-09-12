@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Travely</title>
+    <style>
+        .loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        }
+
+        .loader-circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #3498db;
+        animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+        0% {
+            transform: scale(0.8);
+            opacity: 0.5;
+            }
+        50% {
+            transform: scale(1.2);
+            opacity: 1;
+            }
+        100% {
+            transform: scale(0.8);
+            opacity: 0.5;
+            }
+        }
+    </style>
 </head>
 <body class="bg-white font-body">
     <nav class="flex justify-between items-center h-16 md:h-20 px-4 md:px-12 shadow-md">
